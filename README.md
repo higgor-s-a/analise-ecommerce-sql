@@ -1,30 +1,82 @@
-# 📊 Análise de Dados de E-commerce com SQL
+# 🛒 Análise de Dados de E-commerce com SQL
 
 ## 📌 Objetivo
 
-Analisar dados de um e-commerce brasileiro para extrair insights de negócio.
+Analisar dados de um e-commerce para identificar padrões de faturamento, comportamento de vendas e oportunidades de negócio através de consultas SQL.
 
-## 🛠️ Ferramentas
+---
 
-* PostgreSQL
-* SQL
+## 📊 Base de Dados
 
-## 📊 Análises
+O dataset contém informações sobre:
 
-* Receita total
-* Receita por mês
-* Ticket médio
-* Clientes mais valiosos
-* Receita por estado
+* Pedidos
+* Pagamentos
+* Clientes
+* Produtos
+* Datas de compra
 
-## 🧠 Insights
+Os dados foram utilizados para simular um cenário real de análise comercial.
 
-* Receita concentrada em poucos clientes
-* Forte presença em São Paulo
-* Possível sazonalidade nas vendas
+---
 
-## 📁 Estrutura
+## ❓ Perguntas de Negócio
 
-* schema.sql
-* queries.sql
-* insights.md
+Este projeto busca responder:
+
+* Qual é a receita total do e-commerce?
+* Como a receita evolui ao longo do tempo?
+* Existem padrões de sazonalidade nas vendas?
+* Quais categorias de produtos geram mais receita?
+* Como está distribuído o faturamento entre clientes/regiões?
+
+---
+
+## 🧠 Análises Realizadas
+
+* Cálculo da receita total
+* Análise de faturamento por mês
+* Identificação de picos de vendas
+* Análise por categoria de produto
+* Distribuição de receita por clientes
+
+---
+
+## 📈 Principais Insights
+
+* O e-commerce apresenta faturamento superior a **R$ 16 milhões**, indicando operação de grande volume
+* A receita demonstra **variação ao longo dos meses**, sugerindo presença de sazonalidade
+* Existem **picos de vendas concentrados em períodos específicos**, possivelmente relacionados a campanhas ou datas comerciais
+* Parte significativa do faturamento está concentrada em **determinadas categorias de produtos**
+* A receita apresenta **distribuição desigual entre clientes**, indicando possível concentração de valor
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+* SQL (PostgreSQL)
+
+---
+
+## 📎 Estrutura das Consultas
+
+As análises foram realizadas utilizando:
+
+* `SUM()` para cálculo de receita
+* `GROUP BY` para agregações
+* `ORDER BY` para ordenação de resultados
+* `DATE_TRUNC()` para análise temporal
+
+---
+
+## 📂 Como Executar
+
+1. Importar os dados para um banco PostgreSQL
+2. Executar os scripts SQL disponíveis no repositório
+3. Analisar os resultados gerados pelas consultas
+
+---
+
+## 🎯 Conclusão
+
+O projeto demonstra a aplicação de SQL para análise de dados de negócio, permitindo extrair insights relevantes a partir de dados brutos e apoiar a tomada de decisão.
